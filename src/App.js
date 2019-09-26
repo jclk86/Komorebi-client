@@ -1,20 +1,21 @@
-import React, {Component} from 'react';
-import './App.css';
-import StripeBtn from "./StripeBtn/StripeBtn";
+import React, { Component } from "react";
+import Checkout from "../src/Components/Checkout/Checkout";
+import "./App.css";
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <p>Stripe Checkout - ReactJS</p>
-          <StripeBtn />
+          <Checkout
+            name={"The Road to learn React"}
+            description={"Only the Book"}
+            amount={1}
+          />
         </header>
       </div>
     );
   }
-
 }
 
 export default App;
